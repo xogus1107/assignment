@@ -1,0 +1,102 @@
+@font-face {
+    font-family:    'PocketCalculator';
+    src:            url('../fonts/PocketCalculator.TTF') format('truetype');
+    font-weight:    normal;
+    font-style:     normal;
+}
+
+.title {
+    font-family:    PocketCalculator;
+    font-size:      3em;
+}
+
+.title p {
+    margin:         10px 0;
+}
+
+.container {
+    width:          400px;
+    margin:         50px auto;
+}
+
+#calc {
+    width:          100%;
+    height:         100%;
+    border:         3px solid black;
+    border-radius:  3px;
+    background:     #696969;
+    position:       relative;
+    font-family:    arial;
+}
+
+.inner {
+    height:         12%;
+    border-radius:  2px;
+    margin:         8px;
+}
+
+#display {
+    position:       relative;
+    background:     #fff;
+    height:         48px;
+    margin:         8px;
+    border:         1px solid #778899;
+}
+
+span.display-text {
+    overflow:       hidden;
+    float:          right;
+    margin:         0 10px;
+    max-width:      362px;
+    line-height:    48px;
+    font-family:    PocketCalculator;
+    font-size:      2.5em;
+}
+
+.memory {
+    margin-left:    8px;
+    font-family:    PocketCalculator;
+    font-size:      1.4em;
+}
+.memory p {
+    margin:         0;
+}
+
+.inner div.button {
+    display:        inline-block;
+    background:     #8FBC8F;
+    width:          18.4%;
+    height:         100%;
+    border:         1px solid #fff;
+    border-radius:  2px;
+    cursor:         pointer;
+    text-align:     center;
+
+}
+
+.inner div.button p {
+    margin:         0;
+    line-height:    48px;
+    font-size:      20px;
+    font-weight:    bold;
+}
+
+.inner div.equal {
+    background:     #FF3500;
+    position:       absolute;
+    height:         106px !important;
+    margin-left:    5px;
+    width:          17.5%;
+}
+.inner div.equal p {
+    line-height:    106px;
+}
+
+.inner div:hover {
+    background:     #660BAB;
+    border:         1px solid gray;
+}
+
+.inner div:unhover {
+
+}
