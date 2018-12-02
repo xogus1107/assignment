@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.exun.test.moontaehyun">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TwiceTwice"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        tools:replace="android:label">
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="TwiceTwice"
+            android:theme="@style/MyMaterialTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".secondactivity.Sana" />
+        <activity android:name=".secondactivity.jeongyeon" />
+        <activity android:name=".secondactivity.nayeon" />
+        <activity android:name=".secondactivity.Irene" />
+        <activity android:name=".secondactivity.joy" />
+        <activity android:name=".secondactivity.seulgi" />
+        <activity android:name=".firstactivity.Twice2" />
+        <activity android:name=".firstactivity.Redvelvet2" />
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".AddNoteActivity" />
+        <activity android:name=".NotePreviewActivity" />
+        <activity android:name=".firstactivity.Listview" />
+
+        <receiver android:name=".BroadcastD" />
+
+        <activity android:name=".secondactivity.Tzuwu"></activity>
+    </application>
+
+</manifest>

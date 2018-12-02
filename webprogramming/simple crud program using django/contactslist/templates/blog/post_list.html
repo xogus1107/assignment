@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts list</title>
+</head>
+<body>
+	<form action="/create" method="post">
+		{% csrf_token %}
+		<label for ="name">Name: <input type="text" name = "name" id="name"></label>
+		<label for ="e_mail">E-mail: <input type="text" name = "e_mail" id="e_mail"></label>
+		<label for ="phone_number">Phone-number: <input type="text" name = "phone_number" id="phone_number"></label>
+		<input type="submit" value="insert"/>
+	</form>
+	<table border = "1">
+		<thead>
+			<th>name</th>
+			<th>E-mail</th>
+			<th>phone-number</th>
+			<th>Actions</th>
+		</thead>
+		<tbody>
+			{% for name in person %}
+				<tr>
+					<td>{{name.name}}</td>
+					<td>{{name.e_mail}}</td>
+					<td>{{name.phone_number}}</td>
+					<td><a href="/edit/{{name.id}}">Edit</a> <a href="/delete/{{name.id}}">Delete</a>
+					</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+		
+		<a href = "/search">Search </a>
+</body>
+</html>

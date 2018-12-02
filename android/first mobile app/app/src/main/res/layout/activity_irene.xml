@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="283dp"
+        android:layout_height="187dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/irene" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="267dp"
+        android:layout_height="341dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="데뷔 전 아이린은 1991년 3월 29일 대구광역시 북구 읍내동에서 2녀 중 첫째로 태어났다.[2][3] 대구인지초등학교, 운암중학교, 학남고등학교를 졸업했다.[4]  2009년 SM 엔터테인먼트에 캐스팅 되어 5년간의 연습생 생활을 거쳐 데뷔하였다.[5]  2013년 아이린은 SM의 프리 데뷔 그룹 SM 루키즈로 첫 공개 되었다.[6] 그녀는 또한 헨리의 〈1-4-3(I Love You)〉 뮤직비디오에 출연했다.[7] 아이린은 SM의 공식 유튜브 채널에 여러 영상 중 하나로 슬기와 함께 S.E.S의 〈Be Natural〉을 선보였다.[8]  2014 ~ 현재: 레드벨벳과 솔로 활동  2018년 2월 2일 아이린 아이린은 2014년 8월, 걸 그룹 레드벨벳의 멤버로 데뷔하였다.[9] 같은 해, 그녀는 규현의 〈광화문에서〉 뮤직비디오에 출연했다.[10]"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>
