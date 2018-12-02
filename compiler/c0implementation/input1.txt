@@ -1,0 +1,10 @@
+R1
+P>bD;Ae
+R2
+D>d;D
+R3
+D>d
+R4
+A>s;A
+R5
+A>s

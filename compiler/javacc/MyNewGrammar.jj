@@ -1,0 +1,324 @@
+/*
+실행방법:
+이클립스에서 프로그램을 실행하면 빈콘솔이 나옵니다. 거기에 파일 첨부한 input file을 복사
+붙여넣기하면 결과 값이 출력됩니다. 
+*/
+/**
+ * JavaCC template file created by SF JavaCC plugin 1.5.28+ wizard for JavaCC 1.5.0+
+ */
+options
+{
+  static = true;
+}
+
+PARSER_BEGIN(MyNewGrammar)
+package compilerproject;
+
+public class MyNewGrammar
+{
+  public static void main(String args []) throws ParseException
+  {
+    MyNewGrammar parser = new MyNewGrammar(System.in);
+    while (true)
+    {
+      try
+      {
+        switch (MyNewGrammar.one_line())
+        {
+          case 0 : 
+          break;
+          case 1 : 
+          System.out.println("Goodbye.");
+          break;
+          default : 
+          break;
+        }
+      }
+      catch (Exception e)
+      {
+        System.out.println("NOK.");
+        System.out.println(e.getMessage());
+        MyNewGrammar.ReInit(System.in);
+      }
+      catch (Error e)
+      {
+        System.out.println("Oops.");
+        System.out.println(e.getMessage());
+        break;
+      }
+    }
+  }
+}
+
+PARSER_END(MyNewGrammar)
+
+SKIP :{
+  " "
+| "\r"
+| "\t"
+}
+
+TOKEN :{
+<RESHAPE: "reshape" >
+|<VARIABLE : "variable">
+|<CONV : "conv">
+|<ADD : "add">
+|<RELU : "relu">
+|<MAX_POOL : "max_pool">
+|<GRAPH : "graph">
+}//함수토큰
+
+TOKEN :{
+ < EQUAL : "=">
+| < START : "(">
+| < END : ")" >
+| < COMMA : ",">
+| < DAEGS: "{" >
+| < DAEGE: "}" >
+}//여러가지 단일 문자 토큰
+
+TOKEN : {
+ <IDENTIFIER: <LETTER> (<LETTER> | <DIGIT>)*>
+|  <#LETTER: ["$","A"-"Z","_","a"-"z"]>
+|  <#NUM: ["0"-"9"]>
+}//식별자토큰
+
+TOKEN :
+{
+  < CONSTANT : (< DIGIT >)+ >
+| < #DIGIT : [ "0"-"9", "-" ] >
+| < EOL: "\n">
+}//숫자 토큰, 음수부호포함
+
+TOKEN :
+{
+< DAE: <HE>>
+}//대괄호
+
+TOKEN :
+{
+<MODIFYCON: < CONSTANT>(" ")*(","(" ")*<CONSTANT>(" ")*)* >
+}//숫자,숫자,를인식하기 위한 토큰
+
+TOKEN :
+{
+< STUDENTNUMBER: <HE>(" ")*< CONSTANT>(" ")*< HE>>
+| < #HE: ["[", "]"]>
+}//Student number부분인식위한토큰
+
+TOKEN :
+{
+< FORSHAPE: <HE>(" ")*< MODIFYCON>(" ")*< HE>>
+}//reshape 함수 뒤족을 인식하기 위한 토큰
+
+TOKEN :
+{
+< NUMCOM: <HU>(" ")*< HU>(" ")*<MODIFYCON>(" ")*< HU>(" ")*< HU>>
+| < #HU: ["(",")","[","]"]>
+}//variable함수 뒤쪽을 인식하기 위한 토큰
+
+TOKEN :
+{
+< ONEPARA: < HU>(" ")*< IDENTIFIER>(" ")*< HU>>
+| < #HA: ["(",")"]>
+}//함수뒤에 parameter가 하나인것 인식위한토큰
+
+TOKEN :
+{
+< TWOPARA: < HU>(" ")*< IDENTIFIER>(" ")*","(" ")*< IDENTIFIER>(" ")*< HU>>
+}//함수뒤에 parameter가 두개인것 인식위한토큰
+
+TOKEN :
+{
+< ANYSTRING: <ONEPARA>(" ")*"-"(" ")*">"(" ")*<ONEPARA>>
+}//input- >outputs 인식위한 토큰
+
+//oneline 함수, 시작부분
+int one_line():
+{
+	String a;
+}
+{
+	a=expr()
+	{System.out.printf(a);
+	return 0;
+	}
+| < EOL> {System.out.println();return 0;}
+| < EOF> { return -1;}
+}
+
+//문장한줄씩을 인식 (괄호,함수,첫문장으로 나눠짐)
+String expr():
+{
+  	String a;
+	Token var;
+}
+{	
+//첫문장
+var = <GRAPH>
+{
+	a="\n"+"result "+student();
+	return a;
+}
+//함수
+|var = < IDENTIFIER>< EQUAL> 
+{
+	a ="\t" + var.toString() +"="+ func();
+	return a;
+}
+//괄호
+|var = < DAEGS >
+{
+	a=var.toString();
+	return a;
+}
+|var = < DAEGE>
+{
+	a=var.toString();
+	return a;
+}
+}
+
+//[20146110]부분인식함수
+String student():
+{
+	String a;
+	Token var;
+}
+{
+var = <STUDENTNUMBER> 
+{
+	a=var.toString()+anystring();
+	return a;
+}
+}
+
+//(input)- >(output)부분인식
+String anystring() :
+{
+	String a;
+	Token var;
+}
+{
+var=<ANYSTRING>
+{
+	a=var.toString();
+	return a;
+}
+}
+
+//함수 6개구분해서인식
+String func() :
+{
+	String a;
+	Token var;
+}
+{
+var = <RESHAPE>"("
+{
+	a = "tf."+var.toString()+"(" +shape1();
+	return a;
+}
+| var= <VARIABLE> 
+{
+	a="tf."+"Variable(tf.random_normal"+num()+")";
+	return a;
+}
+| var=<CONV>
+{
+	a="tf.nn."+var.toString()+"2d"+oneparameter();
+	return a;
+}
+| var=< ADD>
+{
+	a="tf."+var.toString()+twoparameter();
+	return a;
+}
+| var=< RELU>
+{
+	a="tf.nn."+var.toString()+oneparameter();
+	return a;
+}
+| var =<MAX_POOL>
+{
+	a="tf.nn."+var.toString()+oneparameter();
+	return a;
+}
+}
+
+//reshape함수를 뒷부분 인식
+String shape1():
+{
+	String a;
+	Token var;
+}
+{
+var = <IDENTIFIER><COMMA>
+{
+	a=var.toString()+","+shape2();
+	return a;
+}
+}
+
+//shape1 이어서 인식
+String shape2():
+{
+	String a;
+	Token var;
+}	
+{
+var = <FORSHAPE>")"";"
+{
+    a=var.toString()+")"+"\n";
+	return a;
+}
+}
+
+//variable함수 뒤쪽에[3,3,28,104]같은 부분 인식
+String num():
+{
+	String a;
+	Token var;
+}
+{
+var=< NUMCOM>";"
+{
+	a=var.toString();
+	return a;
+}
+}
+
+
+//함수뒤에 parameter가 하나인거인식
+
+String oneparameter():
+{
+	String a;
+	Token var;
+}
+{
+var=< ONEPARA>";"
+{
+	a=var.toString();
+	return a;
+}
+}
+
+//함수뒤에 parameter가 두개인거인식
+String twoparameter():
+{
+	String a;
+	Token var;
+}
+{
+var=< TWOPARA>";"
+{
+	a=var.toString();
+	return a;
+}
+}
+
+
+
+
+
