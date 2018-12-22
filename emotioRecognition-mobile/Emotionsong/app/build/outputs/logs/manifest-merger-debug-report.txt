@@ -1,0 +1,240 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\31b333be737f0b2de034ffeadbf2f136\AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\46d6eeed250e9f6d71d38855f86d84f4\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\461dbb67744c758fc5ab4d8b91cf7a52\AndroidManifest.xml:2:1-11:12
+MERGED from [org.tensorflow:tensorflow-android:1.12.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.12.0.aar\cb648eca27fec73afc3dd07a8357dab4\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-vision:16.2.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-vision-16.2.0.aar\3e103a4891a104ed86321a23e7160f45\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-16.2.0.aar\5ed664f58ac81a8b7e86cd91a03855fa\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-16.0.0.aar\8d0c5dd114a3633637c4ef3af200b76f\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\387fbb8884524f854ce42baa9e771f1c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-16.0.0.aar\e0f46e7cee81cac975dc468ef29c4570\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8d75ba7b2a88465997c8052c93dfdc4a\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\c881ff039ad151a4af2bcd8820e826c8\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\936618e89bb457f102a55eb10aaf3d31\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\2d85b15ca8a23599c275da098b91884a\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\032f29c55c849882378aa70de2a57911\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\7433ccaf2eb19c0f70a5bb0e7469c3f0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ca2cc9525653f5e264fa16225199a7f9\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a5b15cf5f3589d41bdc3701823ed6efc\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\2a8562164c6a03ae3a70fa9771c146e5\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\26489062fb830d9e6b548eaaf20d105b\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\21538d4e59c034efca4e984798df178f\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\45442118e6f7a220fd52eded1fab210a\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:4:5-80
+	android:name
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:4:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:5:22-78
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:6:22-62
+application
+ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:8:5-25:19
+MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\31b333be737f0b2de034ffeadbf2f136\AndroidManifest.xml:9:5-15:19
+MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\31b333be737f0b2de034ffeadbf2f136\AndroidManifest.xml:9:5-15:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\46d6eeed250e9f6d71d38855f86d84f4\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\46d6eeed250e9f6d71d38855f86d84f4\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\461dbb67744c758fc5ab4d8b91cf7a52\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\461dbb67744c758fc5ab4d8b91cf7a52\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-android:1.12.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.12.0.aar\cb648eca27fec73afc3dd07a8357dab4\AndroidManifest.xml:5:5-6:19
+MERGED from [org.tensorflow:tensorflow-android:1.12.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.12.0.aar\cb648eca27fec73afc3dd07a8357dab4\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-vision:16.2.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-vision-16.2.0.aar\3e103a4891a104ed86321a23e7160f45\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:16.2.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-vision-16.2.0.aar\3e103a4891a104ed86321a23e7160f45\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-16.2.0.aar\5ed664f58ac81a8b7e86cd91a03855fa\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-16.2.0.aar\5ed664f58ac81a8b7e86cd91a03855fa\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-16.0.0.aar\8d0c5dd114a3633637c4ef3af200b76f\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-16.0.0.aar\8d0c5dd114a3633637c4ef3af200b76f\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-16.0.0.aar\e0f46e7cee81cac975dc468ef29c4570\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-16.0.0.aar\e0f46e7cee81cac975dc468ef29c4570\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8d75ba7b2a88465997c8052c93dfdc4a\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8d75ba7b2a88465997c8052c93dfdc4a\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\c881ff039ad151a4af2bcd8820e826c8\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\c881ff039ad151a4af2bcd8820e826c8\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\936618e89bb457f102a55eb10aaf3d31\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\936618e89bb457f102a55eb10aaf3d31\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\2d85b15ca8a23599c275da098b91884a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\2d85b15ca8a23599c275da098b91884a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\032f29c55c849882378aa70de2a57911\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\032f29c55c849882378aa70de2a57911\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\7433ccaf2eb19c0f70a5bb0e7469c3f0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\7433ccaf2eb19c0f70a5bb0e7469c3f0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ca2cc9525653f5e264fa16225199a7f9\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ca2cc9525653f5e264fa16225199a7f9\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a5b15cf5f3589d41bdc3701823ed6efc\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a5b15cf5f3589d41bdc3701823ed6efc\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\2a8562164c6a03ae3a70fa9771c146e5\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\2a8562164c6a03ae3a70fa9771c146e5\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\26489062fb830d9e6b548eaaf20d105b\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\26489062fb830d9e6b548eaaf20d105b\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\21538d4e59c034efca4e984798df178f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\21538d4e59c034efca4e984798df178f\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\45442118e6f7a220fd52eded1fab210a\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\45442118e6f7a220fd52eded1fab210a\AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:14:9-40
+meta-data#com.google.android.gms.vision.DEPENDENCIES
+ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:15:9-17:35
+	android:value
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:17:13-33
+	android:name
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:16:13-70
+activity#com.compositeai.Emotionsong.MainActivity
+ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:18:9-24:20
+	android:name
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:18:19-74
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:22:27-74
+uses-sdk
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\31b333be737f0b2de034ffeadbf2f136\AndroidManifest.xml:5:5-7:41
+MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\31b333be737f0b2de034ffeadbf2f136\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\46d6eeed250e9f6d71d38855f86d84f4\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\46d6eeed250e9f6d71d38855f86d84f4\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\461dbb67744c758fc5ab4d8b91cf7a52\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\461dbb67744c758fc5ab4d8b91cf7a52\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-vision:16.2.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-vision-16.2.0.aar\3e103a4891a104ed86321a23e7160f45\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:16.2.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-vision-16.2.0.aar\3e103a4891a104ed86321a23e7160f45\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-16.2.0.aar\5ed664f58ac81a8b7e86cd91a03855fa\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-16.2.0.aar\5ed664f58ac81a8b7e86cd91a03855fa\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-16.0.0.aar\8d0c5dd114a3633637c4ef3af200b76f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-16.0.0.aar\8d0c5dd114a3633637c4ef3af200b76f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\387fbb8884524f854ce42baa9e771f1c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\387fbb8884524f854ce42baa9e771f1c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-16.0.0.aar\e0f46e7cee81cac975dc468ef29c4570\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-16.0.0.aar\e0f46e7cee81cac975dc468ef29c4570\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8d75ba7b2a88465997c8052c93dfdc4a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8d75ba7b2a88465997c8052c93dfdc4a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\c881ff039ad151a4af2bcd8820e826c8\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\c881ff039ad151a4af2bcd8820e826c8\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\936618e89bb457f102a55eb10aaf3d31\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\936618e89bb457f102a55eb10aaf3d31\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\2d85b15ca8a23599c275da098b91884a\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\2d85b15ca8a23599c275da098b91884a\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\032f29c55c849882378aa70de2a57911\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\032f29c55c849882378aa70de2a57911\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\7433ccaf2eb19c0f70a5bb0e7469c3f0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\7433ccaf2eb19c0f70a5bb0e7469c3f0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ca2cc9525653f5e264fa16225199a7f9\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ca2cc9525653f5e264fa16225199a7f9\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a5b15cf5f3589d41bdc3701823ed6efc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a5b15cf5f3589d41bdc3701823ed6efc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\2a8562164c6a03ae3a70fa9771c146e5\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\2a8562164c6a03ae3a70fa9771c146e5\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\26489062fb830d9e6b548eaaf20d105b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\26489062fb830d9e6b548eaaf20d105b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\21538d4e59c034efca4e984798df178f\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\21538d4e59c034efca4e984798df178f\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\45442118e6f7a220fd52eded1fab210a\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\45442118e6f7a220fd52eded1fab210a\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\46d6eeed250e9f6d71d38855f86d84f4\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml
+activity#com.gun0912.tedpermission.TedPermissionActivity
+ADDED from [gun0912.ted:tedpermission:2.2.2] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\31b333be737f0b2de034ffeadbf2f136\AndroidManifest.xml:10:9-14:67
+	android:screenOrientation
+		ADDED from [gun0912.ted:tedpermission:2.2.2] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\31b333be737f0b2de034ffeadbf2f136\AndroidManifest.xml:13:13-52
+	android:configChanges
+		ADDED from [gun0912.ted:tedpermission:2.2.2] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\31b333be737f0b2de034ffeadbf2f136\AndroidManifest.xml:12:13-144
+	android:theme
+		ADDED from [gun0912.ted:tedpermission:2.2.2] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\31b333be737f0b2de034ffeadbf2f136\AndroidManifest.xml:14:13-64
+	android:name
+		ADDED from [gun0912.ted:tedpermission:2.2.2] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\tedpermission-2.2.2.aar\31b333be737f0b2de034ffeadbf2f136\AndroidManifest.xml:11:13-75
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\46d6eeed250e9f6d71d38855f86d84f4\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\2d85b15ca8a23599c275da098b91884a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\2d85b15ca8a23599c275da098b91884a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\032f29c55c849882378aa70de2a57911\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\032f29c55c849882378aa70de2a57911\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\7433ccaf2eb19c0f70a5bb0e7469c3f0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\7433ccaf2eb19c0f70a5bb0e7469c3f0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ca2cc9525653f5e264fa16225199a7f9\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ca2cc9525653f5e264fa16225199a7f9\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a5b15cf5f3589d41bdc3701823ed6efc\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a5b15cf5f3589d41bdc3701823ed6efc\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\2a8562164c6a03ae3a70fa9771c146e5\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\2a8562164c6a03ae3a70fa9771c146e5\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\26489062fb830d9e6b548eaaf20d105b\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\26489062fb830d9e6b548eaaf20d105b\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\21538d4e59c034efca4e984798df178f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\21538d4e59c034efca4e984798df178f\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\46d6eeed250e9f6d71d38855f86d84f4\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\46d6eeed250e9f6d71d38855f86d84f4\AndroidManifest.xml:27:13-51
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from C:\Users\moon\Desktop\mobile_app_project\EmotionSong\app\src\main\AndroidManifest.xml:2:1-27:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8d75ba7b2a88465997c8052c93dfdc4a\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8d75ba7b2a88465997c8052c93dfdc4a\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8d75ba7b2a88465997c8052c93dfdc4a\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8d75ba7b2a88465997c8052c93dfdc4a\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\936618e89bb457f102a55eb10aaf3d31\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\936618e89bb457f102a55eb10aaf3d31\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\936618e89bb457f102a55eb10aaf3d31\AndroidManifest.xml:24:13-58
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\45442118e6f7a220fd52eded1fab210a\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\45442118e6f7a220fd52eded1fab210a\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\moon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\45442118e6f7a220fd52eded1fab210a\AndroidManifest.xml:26:13-58
