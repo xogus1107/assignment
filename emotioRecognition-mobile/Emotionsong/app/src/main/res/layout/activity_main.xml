@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/phototaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카메라 사진찍기"></Button>
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:text="갤러리 " />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/emotionTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="당신의 감정은: "
+            android:textSize="18sp"></TextView>
+
+        <com.compositeai.Emotionsong.SquareImageView
+            android:id="@+id/facialImageView"
+            android:layout_width="321dp"
+            android:layout_height="343dp"
+            android:src="@drawable/ic_launcher_background">
+
+        </com.compositeai.Emotionsong.SquareImageView>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/detect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="감정인식"></Button>
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear"></Button>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="노래추천" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
