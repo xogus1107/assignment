@@ -1,0 +1,15 @@
+fragment simple_recurrent_network( x: tensor<scalar>,  n: integer ) -> ( y: tensor<scalar> )
+{
+
+k = shape_of(x)[0];
+m = shape_of(x)[1]; 
+W = variable(shape = [n,m], label = 'W');       
+U = variable(shape = [n,n], label = 'U');
+b = variable(shape = [1,n], label = 'b'); 
+s = variable(shape = [k,n], label = 's'); 
+t = sigmoid(linear(W, x) + linear(U, s) + b);   
+y = update(s, t);     
+                       
+}
+
+

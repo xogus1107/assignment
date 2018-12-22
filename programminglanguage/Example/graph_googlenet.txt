@@ -1,0 +1,28 @@
+graph GoogleNet( input ) -> ( output )
+{
+input = external(shape = [1, 3, 224, 224]);
+conv1 = conv_layer(input, channels = 64, size = [7,7], stride = [2,2],padding = [(3,2), (3,2)], scope = 'conv1');
+relu1 = relu(conv1);
+pool1 = max_pool_layer(relu1, size = [3,3], stride = [2,2],padding = [(0,1), (0,1)]);
+norm1 = local_response_normalization(pool1, size = [1,5,1,1], alpha = 0.0001, beta = 0.75, bias = 1.0);
+conv2 = conv_layer(norm1, channels = 64, size = [1,1], scope = 'conv2');
+relu2 = relu(conv2);
+conv3 = conv_layer(relu2, channels = 192, size = [3,3], scope = 'conv3');
+relu3 = relu(conv3); 
+norm2 = local_response_normalization(relu3, size = [1,5,1,1], alpha = 0.0001,  beta = 0.75, bias = 1.0);
+pool2 = max_pool_layer(norm2, size = [3,3], stride = [2,2],padding = [(0,1), (0,1)]);
+incept1 = inception(pool2, channels = [64, 96, 128, 16, 32, 32], scope = 'incept1');
+incept2 = inception(incept1, channels = [128, 128, 192, 32, 96, 64], scope = 'incept2'); 
+pool3 = max_pool_layer(incept2, size = [3,3], stride = [2,2], padding = [(0,1), (0,1)]);
+incept3 = inception(pool3, channels = [192, 96, 208, 16, 48, 64], scope = 'incept3'); 
+incept4 = inception(incept3, channels = [160, 112, 224, 24, 64, 64], scope = 'incept4');
+incept5 = inception(incept4, channels = [128, 128, 256, 24, 64, 64],  scope = 'incept5');
+incept6 = inception(incept5, channels = [112, 144, 288, 32, 64, 64],scope = 'incept6'); 
+incept7 = inception(incept6, channels = [256, 160, 320, 32, 128, 128], scope = 'incept7');
+pool4 = max_pool_layer(incept7, size = [3,3], stride = [2,2], padding = [(0,1), (0,1)]); 
+incept8 = inception(pool4, channels = [256, 160, 320, 32, 128, 128], scope = 'incept8');
+incept9 = inception(incept8, channels = [384, 192, 384, 48, 128, 128], scope = 'incept9');
+pool5 = avg_pool_layer(incept9, size = [7,7]); 
+conv4 = conv_layer(pool5, channels = 1000, size = [1,1], scope = 'conv4');
+logits = softmax(conv4); 
+}

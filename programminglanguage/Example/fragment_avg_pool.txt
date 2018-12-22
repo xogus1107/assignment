@@ -1,0 +1,4 @@
+fragment avg_pool_layer( input: tensor<scalar>, size: integer[],  border: string = 'constant', padding: (integer,integer)[] = [], stride: integer[] = [], dilation: integer[] = [] ) -> ( output: tensor<scalar> )
+{
+output = avg_pool(input, size = [1,1] + size, border = border,  padding = [(0,0), (0,0)] + padding if length_of(padding) != 0 else [],  stride = [1,1] + stride  if length_of(stride) != 0 else [], dilation = [1,1] + dilation if length_of(dilation) != 0 else []);
+}

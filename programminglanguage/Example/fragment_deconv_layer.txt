@@ -1,0 +1,10 @@
+fragment deconv_layer(
+input: tensor<scalar>, channels: integer, size: integer[], border: string = 'constant',padding: (integer,integer)[] = [],
+stride: integer[] = [], dilation: integer[] = [], output_shape: integer[] = [], groups: integer = 1, use_bias: logical = true,scope: string ) -> ( output: tensor<scalar> )
+{
+planes = shape_of(input)[1] / groups if groups != 0 else 1;
+filter = variable(label = scope + '/filter', shape = [channels, planes] + size); 
+bias = variable(label = scope + '/bias', shape = [1, channels])
+if use_bias else constant(shape = [1], value = [0.0]);
+output = deconv(input, filter, bias, border = border, padding = padding, stride = stride, dilation = dilation,  output_shape = output_shape, groups = groups);
+}

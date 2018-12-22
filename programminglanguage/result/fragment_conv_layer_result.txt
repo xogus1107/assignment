@@ -1,0 +1,8 @@
+def conv_layer(input, channels, size, border, padding, stride, dilation, groups, use_bias, scope):
+
+planes=tf.shape(input)[1]/  groups  if groups != 0  else 1;
+filter=tf.variable(label=scope+'/filter',shape=[channels,planes]+size);
+bias=tf.variable(label=scope+'/bias',shape=[1,channels]) if use_bias else tf.constant(shape=[1],value=[0.0]);
+output=tf.layers.conv2d(input,filter,bias,border=border,padding=padding,stride=stride,dilation=dilation,groups=groups);
+
+return output

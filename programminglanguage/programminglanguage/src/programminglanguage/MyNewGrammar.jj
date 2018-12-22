@@ -1,0 +1,1025 @@
+/**
+ * JavaCC template file created by SF JavaCC plugin 1.5.28+ wizard for JavaCC 1.5.0+
+ */
+options
+{
+  static = true;
+}
+
+PARSER_BEGIN(MyNewGrammar)
+package programminglanguage;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class MyNewGrammar
+{
+  public static void main(String args []) throws ParseException
+  {
+
+    MyNewGrammar parser = new MyNewGrammar(System.in);
+    String txt;
+    String fileName= "C:\\Users\\문태현\\Desktop\\3학년2학기\\pl\\project\\result\\fragment_avg_pool_result.txt";
+   	txt = parser.one_line();
+
+	System.out.println(txt);
+	try {
+		BufferedWriter fw = new BufferedWriter(new FileWriter(fileName));
+		fw.write(txt);
+		fw.flush();
+		fw.close();	
+	  }catch(Exception e) {
+	    e.printStackTrace();
+	    }	  
+   	
+    /*while (true)
+    {
+      try
+      {
+        switch (MyNewGrammar.one_line())
+        {
+          case 0 : 
+          System.out.println("OK.");
+          break;
+          case 1 : 
+          System.out.println("Goodbye.");
+          break;
+          default : 
+          break;
+        }
+      }
+      catch (Exception e)
+      {
+        System.out.println("NOK.");
+        System.out.println(e.getMessage());
+        MyNewGrammar.ReInit(System.in);
+      }
+      catch (Error e)
+      {
+        System.out.println("Oops.");
+        System.out.println(e.getMessage());
+        break;
+      }
+    }*/
+  }
+}
+
+PARSER_END(MyNewGrammar)
+
+SKIP :
+{
+  " "
+| "\r"
+| "\t"
+| "\n"
+| "\r\n"
+}
+
+TOKEN :
+{
+  < MAX_POOL : "max_pool_layer" >
+| < NCHANGE :
+    "inception"
+  | "avg_pool_layer" >
+| < AVG_POOL: "avg_pool">
+| < IF : "if" >
+| < SIGMOID:"sigmoid">
+| < ELSE : "else" >
+| < CONV : "conv_layer"|"conv" >
+| < LABEL : "label" >
+| < SCOPE : "scope" >
+| < USE_BIAS: "use_bias">
+| < CONS: "constant">
+| < TF :	
+   "softmax"
+  | "relu"
+  | "local_response_normalization" >
+| < DECONV : "deconv" >
+| < KEEP :
+    "batch_normalization"
+  | "update" >
+| < GRAPH : "graph" >
+| < GROUPS : "groups" >
+| < FRAGMENT : "fragment" >
+| < TYPE :
+    "integer"
+  | "scalar"
+  | "logical"
+  | "string"
+  | "?" >
+| < TENSOR : "tensor" >
+| < LINEAR: "linear">
+| < SHAPE_OF :
+    "shape_of">
+| < NUMERIC_LITERAL :
+    ([ "+", "-" ])? ([ "0"-"9" ])+
+    (
+      "." ([ "0"-"9" ])+
+    )?
+    (
+      [ "E", "e" ] ([ "+", "-" ])? ([ "0"-"9" ])+
+    )? >
+| < SSIBAL :
+    (
+      "'"
+    | "\""
+    )
+    ("/") ([ "a"-"z", "A"-"Z", "/", "_", "0"-"9", "[", "]" ])*
+    (
+      "'"
+    | "\""
+    ) >
+| < STRING_LITERAL :
+    (
+      "'"
+    | "\""
+    )
+    ([ "a"-"z", "A"-"Z", "/", "_", "0"-"9", "[", "]" ])*
+    (
+      "'"
+    | "\""
+    ) >
+| < LOGICAL_LITERAL :
+    (
+      "true"
+    | "false"
+    ) >
+| < IDENTIFIER :
+    < LETTER >
+    (
+      < LETTER >
+    | < DIGIT >
+    )* >
+| < #LETTER : [ "$", "A"-"Z", "_", "a"-"z" ] >
+| < #NUM : [ "0"-"9" ] >
+| < ARROW : "- >" >
+| < LESS : "<" >
+| < LESS_EQUAL : "<=" >
+| < GREATER : ">" >
+| < GREATER_EQUAL : ">=" >
+| < EQUAL : "==" >
+| < NOT_EQUAL : "!=" >
+| < POW : "^" >
+| < AND : "&&" >
+| < OR : "||" >
+| < NOT : "!" >
+| < ASSIGN : "=" >
+| < COMMA : "," >
+| < L_PAREN : "(" >
+| < R_PAREN : ")" >
+| < L_BRACKET : "[" >
+| < R_BRACKET : "]" >
+| < L_BRACE : " { " >
+| < R_BRACE : " }" >
+| < COLON : ":" >
+| < SEMI_COLON : ";" >
+| < QUESTION : "?" >
+| < DOT : "." >
+} //식별자토큰
+
+TOKEN : /* OPERATORS */
+{
+  < PLUS : "+" >
+| < MINUS : "-" >
+| < MULT : "*" >
+| < DIV : "/" >
+}
+
+TOKEN :
+{
+  < CONSTANT : (< DIGIT >)+ >
+| < #DIGIT : [ "0"-"9" ] >
+}
+
+
+
+String one_line() :
+{
+  String res = "";
+}
+{
+  (
+    (
+      res = graph_definition()
+    )
+    {
+      ;
+    }
+  |
+    (
+      res = fragment_definition()
+    )
+    {
+      ;
+    }
+  )
+  {
+    System.out.println(res);
+    return res;
+  }
+}
+
+String graph_definition() :
+{
+  String res1;
+  String res2;
+}
+{
+  res1 = graph_declaration()
+  (
+    res2 = body()
+    {
+      res1 = res1 + res2;
+    }
+  )
+  {
+    return res1;
+  }
+}
+
+String fragment_definition() :
+{
+  String res1;
+  String res2;
+}
+{
+  res1 = fragment_declaration()
+  (
+    res2 = body2()
+    {
+      res1 = res1 + res2;
+    }
+  )
+  {
+    return res1;
+  }
+| res1 = fragment_declaration2()
+   (
+    res2 = body3()
+    {
+      res1 = res1 + res2;
+    }
+  )
+  {
+    return res1;
+  }  
+}
+
+String body3() :
+{
+  String a;
+  String b = "";
+}
+{
+  "{"
+  (
+    a = assignment2()
+    {
+      b = b + "\r\n" + a;
+    }
+  )+
+  "}"
+  {
+      return b+"\r\n\r\n"+"return y";
+  }
+}
+
+String body2() :
+{
+  String a;
+  String b = "";
+}
+{
+  "{"
+  (
+    a = assignment2()
+    {
+      b = b + "\r\n" + a;
+    }
+  )+
+  "}"
+  {      return b+"\r\n\r\n"+"return output";
+  }
+}
+
+String assignment2() :
+{
+  String a;
+  String b;
+  String c;
+}
+{
+  (
+    a = lvalue_expr()
+  )
+  < ASSIGN >
+  (
+    b = rvalue_expr2()
+  )
+  (
+    ";"
+  | c = if_else_expr()
+    {
+      b = b + c;
+    }
+    ";"
+  )
+  {
+    return a + "=" + b + ";";
+  }
+  
+}
+
+String rvalue_expr2() :
+{
+  String a;
+  Token res;
+}
+{
+  a = shape_of()
+  {
+    return a;
+  }
+| 
+  < DECONV > < L_PAREN >
+  (
+    a = argument_list()
+  )
+  < R_PAREN >
+  {
+    return "tf.layers.conv2d_transpose" + "(" + a + ")";
+  }
+| 
+  < CONV > < L_PAREN >
+  (
+    a = argument_list()
+  )
+  < R_PAREN >
+  {
+    return "tf.layers.conv2d" + "(" + a + ")";
+  }
+ | 
+  < AVG_POOL > < L_PAREN >
+  (
+    a = argument_list()
+  )
+  < R_PAREN >
+  {
+    return "tf.nn.avg_pool" + "(" + a + ")";
+  }
+| 
+  res = < KEEP > < L_PAREN >
+  (
+    a = argument_list()
+  )
+  < R_PAREN >
+  {
+    return res.toString() + "(" + a + ")";
+  }
+| 
+  res = < IDENTIFIER > < L_PAREN >
+  (
+    a = argument_list()
+  )
+  < R_PAREN >
+  {
+    return "tf." + res.toString() + "(" + a + ")";
+  }
+| < SIGMOID>< L_PAREN>(a=plus_list())< R_PAREN>
+{
+	return "tf.sigmoid"+"("+a+")";
+}
+}
+
+String plus_list():
+{
+  String a;
+  String b;
+}
+{
+	a=new_one()(< PLUS>b=new_one() {a=a+"+"+b;})*
+	{
+		return a;
+	}
+}
+
+String new_one():
+{
+  Token res;
+  Token res2;
+  String a="";
+}
+{
+	< LINEAR>< L_PAREN>res=< IDENTIFIER>(","res2=< IDENTIFIER> {a=a+","+res2.toString(); })*< R_PAREN>
+  {
+  	return "linear("+res.toString()+a+")";
+  }
+|
+	res=< IDENTIFIER>
+	{	  
+	return res.toString();
+}
+}
+
+String shape_of() :
+{
+  Token res;
+  Token res2;
+  Token res1;
+  String a;
+  String b;
+}
+{
+  res = < SHAPE_OF> < L_PAREN > res1 = < IDENTIFIER > < R_PAREN > < L_BRACKET > res2 = < NUMERIC_LITERAL > < R_BRACKET > ("/" < GROUPS > a = if_else_expr() {
+    b= "tf.shape" + "(" + res1.toString() + ")" + "[" + res2.toString() + "]" + "/  " + "groups " + a;
+  }| { b="tf.shape"+"("+res1.toString()+")"+"["+res2.toString()+"]";})
+  {
+    return b; }
+}
+
+String if_else_expr() :
+{
+  String a;
+  String b;
+}
+{
+  < IF > a = total_expr() < ELSE > (b = total_expr())
+  {
+    return " if " + a + " else " + b;
+  }
+  | "if length_of(dilation) != 0 else []"
+	{
+		return " if len(dilation) != 0 else []";
+	}
+| "if length_of(padding) != 0 else []"
+{
+	return " if len(padding) != 0 else []";
+}
+| "if length_of(stride) != 0 else []"
+{
+	return " if len(stride) != 0 else []";
+}
+  
+}
+
+String total_expr() :
+{
+  String a;
+  Token res1;
+  Token res2;
+}
+{
+  < USE_BIAS>
+  {
+	return "use_bias";
+  }
+| 
+  a = invocation()
+  {
+    return a;
+  }
+| 
+  a = rvalue_expr_except()
+  {
+    return a;
+  }
+| 
+  res1 = < GROUPS > < NOT_EQUAL > res2 = < NUMERIC_LITERAL >
+  {
+    return res1.toString() + " != " + res2.toString() + " ";
+  }
+
+}
+
+String rvalue_expr_except() :
+{
+  Token res;
+  String a;
+}
+{
+  res = < NUMERIC_LITERAL >
+  {
+    return res.toString();
+  }
+| 
+  res = < STRING_LITERAL >
+  {
+    return res.toString();
+  }
+| 
+  a = array_rvalue_expr()
+  {
+    return a;
+  }
+}
+
+String fragment_declaration2() :
+{
+  Token res;
+  String a;
+}
+{
+  "fragment simple_recurrent_network"
+  "("
+  (
+    a = parameter_list()
+  )
+  ")" "->" "("
+  (
+    result_list()
+  )
+  ")"
+  {
+    return "def " + "simple_recurrent_network" + "(" + a + ")" + ":\r\n";
+  }
+}
+
+String fragment_declaration() :
+{
+  Token res;
+  String a;
+}
+{
+  < FRAGMENT >
+  (
+    res = < CONV >
+  | res = < IDENTIFIER >|res=< NCHANGE>
+  )
+  "("
+  (
+    a = parameter_list()
+  )
+  ")" "->" "("
+  (
+    result_list()
+  )
+  ")"
+  {
+    return "def " + res.toString() + "(" + a + ")" + ":\r\n";
+  }
+}
+
+void result_list() :
+{
+}
+{
+  result()
+  (
+    "," result()
+  )*
+}
+
+void result() :
+{
+}
+{
+  < IDENTIFIER > ":" type_spec()
+}
+
+String parameter_list() :
+{
+  Token res;
+  String a = "";
+  String b;
+}
+{
+  a = parameter()
+  (
+    "," b = parameter()
+    {
+      a = a + ", " + b;
+    }
+  )*
+  {
+    return a;
+  }
+}
+
+String parameter() :
+{
+  Token res;
+}
+{
+  res = < IDENTIFIER > ":" type_spec() [ "=" literal_expr() ]
+  {
+    return res.toString();	
+  }
+| 
+  res = < GROUPS > ":" type_spec() [ "=" literal_expr() ]
+  {
+    return res.toString();	
+  }
+| 	res = < LABEL > ":" type_spec() [ "=" literal_expr() ]
+  {
+    return res.toString();	
+  }
+| 	res = < SCOPE > ":" type_spec() [ "=" literal_expr() ]
+  {
+    return res.toString();	
+  }
+ | 	res = < USE_BIAS > ":" type_spec() [ "=" literal_expr() ]
+  {
+    return res.toString();	
+  }
+}
+
+void literal_expr() :
+{
+}
+{
+  literal()
+| 
+  < L_BRACKET > < R_BRACKET >
+}
+
+void literal() :
+{
+}
+{
+  < NUMERIC_LITERAL >
+| < STRING_LITERAL >
+| < LOGICAL_LITERAL >
+}
+
+void type_spec() :
+{
+}
+{
+  < TYPE > array_type_spec()
+| 
+  tensor_type_spec()
+| 
+  tuple_type_spec()
+}
+
+void tuple_type_spec() :
+{
+}
+{
+  "(" < TYPE > ("," < TYPE >)+ ")" tuple_addition()
+}
+
+void tuple_addition() :
+{
+}
+{
+  < L_BRACKET > < R_BRACKET >
+  {
+    return;
+  }
+|
+  {
+    return;
+  }
+}
+
+void array_type_spec() :
+{
+}
+{
+  < L_BRACKET > < R_BRACKET >
+  {
+    return;
+  }
+|
+  {
+    return;
+  }
+}
+
+void tensor_type_spec() :
+{
+}
+{
+  < TENSOR > "<" < TYPE > ">"
+}
+
+String graph_declaration() :
+{
+  Token res;
+}
+{
+  res = < GRAPH > < IDENTIFIER > "(" < IDENTIFIER > ("," < IDENTIFIER >)* ")" "->" "(" < IDENTIFIER > ")"
+  {
+    return "";
+  }
+}
+
+String body() :
+{
+  Token res;
+  String a;
+  String b = "";
+}
+{
+  "{"
+  (
+    a = assignment()
+    {
+      b = b + "\r\n" + a;
+    }
+  )+
+  "}"
+  {
+    return b;
+  }
+}
+
+String assignment() :
+{
+  String a;
+  String b;
+}
+{
+  (
+    a = lvalue_expr()
+  )
+  < ASSIGN >
+  (
+    b = invocation()
+  )
+  ";"
+  {
+    return a + "=" + b + ";";
+  }
+}
+
+String lvalue_expr() :
+{
+  Token res;
+}
+{
+  res = < IDENTIFIER >
+  {
+    return res.toString();
+  }
+}
+
+String invocation() :
+{
+  Token res1;
+  Token res2;
+  String a;
+}
+{
+  res1=< CONS>"("a=argument_list()")"
+  {
+	return "tf."+res1.toString()+"("+a+")";
+  }
+|   res1 = < NCHANGE > "("
+  (
+    a = argument_list()
+  )
+  ")"
+  {
+    return res1.toString() + "(" + a + ")";
+  }
+| 
+  res1 = < CONV > "("
+  (
+    a = argument_list()
+  )
+  ")"
+  {
+    return "tf.nn." + "conv2d" + "(" + a + ")";
+  }
+| 
+  res1 = < MAX_POOL > "("
+  (
+    a = argument_list()
+  )
+  ")"
+  {
+    return "tf.nn." + "max_pool" + "(" + a + ")";
+  }
+| 
+  res1 = < TF > "("
+  (
+    a = argument_list()
+  )
+  ")"
+  {
+    return "tf.nn." + res1.toString() + "(" + a + ")";
+  }
+| 	
+  res1 = < IDENTIFIER > "("
+  (
+    a = argument_list()
+  )
+  ")"
+  {
+    return res1.toString() + "(" + a + ")";
+  }
+}
+
+String argument_list() :
+{
+  String a;
+  String b;
+}
+{
+  (a = argument())("," b = argument(){a = a + "," + b;})*
+  {
+    return a;
+  }
+}
+
+String argument() :
+{
+  Token res;
+  String a;
+}
+{
+  res = < LABEL >
+  (
+    a = argument_operate()
+  )
+  {
+    return res.toString() + a;
+  }
+| 
+  res = < IDENTIFIER >
+  (
+    a = argument_equal()
+  )
+  {
+    return res.toString() + a;
+  }
+| 
+  res = < SCOPE >
+  (
+    a = argument_operate()
+  )
+  {
+    return res.toString() + a;
+  }
+  | 
+  res = < GROUPS >< ASSIGN>< GROUPS>
+  {
+    return res.toString()+"=groups";
+  }
+}
+
+String argument_operate() :
+{
+  Token res;
+  Token res2;
+  String a;
+}
+{
+  < ASSIGN >a=onemore()
+  {
+    return "=" + a;
+  }
+
+  
+}
+String onemore():
+{
+  Token res;
+  String a;
+}
+{
+  (res = < LABEL >| res = < SCOPE >)< PLUS > a = fuck()
+   {
+    return res.toString() + "+" + a;
+  }
+|
+	res=< STRING_LITERAL>
+	{
+		return res.toString();
+	}
+}
+
+String fuck() :
+{
+  Token res;
+  Token res2;
+}
+{
+  res2 = < SSIBAL >
+  {
+    return res2.toString();
+  }
+| 
+  res2 = < STRING_LITERAL >
+  {
+    return res2.toString();
+  }
+}
+
+String argument_equal() :
+{
+  Token res;
+  String a;
+}
+{
+  "=" a = rvalue_expr()
+  {
+    return "=" + a;
+  }
+|
+  {
+    return "";
+  }
+}
+
+String rvalue_expr() :
+{
+  Token res;
+  String a;
+  String b;
+}
+{
+  res = < NUMERIC_LITERAL >
+  {
+    return res.toString();
+  }
+| 
+  res = < STRING_LITERAL >
+  {
+    return res.toString();
+  }
+| 
+  a = array_rvalue_expr() b = array_add()
+  {
+    return a + b;
+  }
+| 
+  res = < IDENTIFIER >
+  {
+    return res.toString();
+  }
+| 	res = < LOGICAL_LITERAL >
+  {
+    return res.toString();
+  }
+}
+
+String array_add() :
+{
+  Token res;
+	String a;
+}
+{
+  < PLUS > res = < IDENTIFIER >(a=if_else_expr()| {a="";})
+  {
+    return "+" + res.toString()+a;
+  }
+|
+  {
+    return "";
+  }
+}
+
+String array_rvalue_expr() :
+{
+  Token res;
+  Token res2;
+  String a = "";
+  String b;
+}
+{
+  "["(b = tuple_rvalue_expr(){a = a + b;})("," b = tuple_rvalue_expr(){a = a + "," + b;})*"]"
+  {
+    return "[" + a + "]";
+  }
+
+}
+
+String tuple_rvalue_expr() :
+{
+  Token res;
+  Token res2;
+  String a = "";
+  String b;
+}
+{
+  res = < IDENTIFIER >
+  {
+    return res.toString();
+  }
+| 
+  res = < NUMERIC_LITERAL >
+  {
+    return res.toString();
+  }
+| 
+  "(" res = < NUMERIC_LITERAL >
+  {
+    a = a + res.toString();
+  }
+  (
+    "," res = < NUMERIC_LITERAL >
+    {
+      a = a + "," + res.toString();
+    }
+  )*
+  ")"
+  {
+    return "(" + a + ")";
+  }
+}
